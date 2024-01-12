@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "myfirstmod",
+	"version": "${version}",
+	"name": "MyFirstMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"XST99"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/myfirstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.crewco.MyFirstMod"
+		],
+		"client": [
+			"com.crewco.MyFirstModClient"
+		],
+		"fabric-datagen": [
+			"com.crewco.MyFirstModDataGenerator"
+		]
+	},
+	"mixins": [
+		"myfirstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
